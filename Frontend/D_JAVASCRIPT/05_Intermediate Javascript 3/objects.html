@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects in Javascript</h1>
+    <script>
+        // OOP is the concept that everything in Javascript is an object
+        // Object Literal is the basic way to create an object
+        var car = {
+            make: "camry",
+            model: 2020,
+            move: function(){
+                console.log('zoom zoom!')
+            },
+            color: 'red'
+        }
+        // console logging the car object
+        console.log(car)
+        // Accessing members/ values from an object
+        var carMake = car.make
+        var carModel = car.model
+        var carColor = car.color
+        console.log( `car make is ${carMake}, / n car model is ${carModel}, /n car color is ${carColor}`)
+
+        // Acessing a method in an object
+        car.move()
+
+        // Modify / update an object
+        car.mileage = 1000
+
+        // Nesting Arrays and Objects
+        // We can have arrays in Objects
+        // We can also have objects in an array
+
+        // Let's say we can store addresses of some streets in oBIO Akpor
+        var addresses = [
+            {street: 'okpoyo',postal: 12345},
+            {street: 'Artillery',postal: 54321},  
+        ]
+        // Accessing the values
+        var okpoyoStreet = addresses[0]. street
+        console.log(okpoyoStreet)
+
+        // Arrays in an object
+        var school = {
+            courses: ['WDD', 'UI/UX', 'MOS']
+        }
+        // Accessing the values
+        var webDesign = school.courses[0]
+        console.log(webDesign)
+    </script>
+</body>
+</html>

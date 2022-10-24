@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Element</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse ;
+            /* default*/
+            flex-direction: row;
+        }
+        .container2{
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .items{
+            width: 200px;
+            height: 40px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: salmon;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Flexbox-Parent Element</h2>
+    <div class="container">
+    <div class="item1 items">Child 1</div>
+    <div class="item2 items">Child 2</div>
+    <div class="item3 items">Child 3</div>
+    <div class="item4 items">Child 4</div>
+    </div>
+
+    <h2>Centering Elements</h2>
+    <div class="container2">
+        <div class="Centered-child">Center me</div>
+    </div>
+</body>
+</html>

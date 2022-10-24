@@ -1,0 +1,142 @@
+
+Classwork:
+1. Expain what you understand in short sentences:
+a. Comparism Operators
+b. Logical Operators
+c. Booleans
+d. Data types
+e. Logical And
+f. Logical Or
+g. Logical Not
+
+PRACTICAL
+Write an if statement to decide whether you will go to the market on a monday,saturday or on a sunday.
+1. The condition for the first if() will check if monday is a market day.
+2. The condition for the second day will check the purpose of sunday and compare it to whether it aligns with the condition of the first if statement.
+3. The last condition should evaluate if all other if() statements are false.
+
+
+
+classwork 2
+1. Create an empty array 
+
+
+
+
+PRACTICAL
+Create an array of values, use both strings an numbers . Then perform the following operations:
+1. forEach
+2. map
+3. filter
+create an arrya of only numbers this time. perform1. reduce
+
+
+Classwork1. Create any number of elements in your html.index file.
+2. Assign to these elements from the DOM 
+4. Then inject/ insert some text contents into each and every one of the elements
+TIP: use either the css query selector approach or the old school method.
+
+
+
+Classwork
+1. Using any of three method to add events to your webpage
+2. add the following events listeners
+a. onmousemove
+b. ondblclick
+
+
+THINGS LEARNT
+1.Strings, string template literal,string concatenation
+2. function
+3. Decision making: using if, if/else, if/else if statements
+4. Data Types: Arrays, Objects, Methods
+5. DOM, Manipulating the DOM
+6. Events,Handlers and Listeners
+
+
+
+
+Projects to choose from
+1. Stopwatch
+2. Clock
+3. Calaculator
+4. To do list
+5. Quiz(Question and answer)
+6. Mouseover effect
+7. Weather app
+8. Browser code editor
+
+1. Stopwatch
+UI- user interface
+logic:
+a. Event listener eg: onlclick
+b. function
+
+
+
+2. clock
+a. function
+b. web api: setInterval()
+            SetTimeout()
+            clearInterval
+            clearTimeout
+
+
+
+3. Calculator
+a.Event listeners(Onclick) 
+b. function
+
+
+4. To-do list
+a. Event listeners(change,input,click)
+b. DOM (ul + li elements)
+
+
+5.Responsive Navbar
+a.Event Listener(click)
+b.css
+c. DOM
+d. Toggler
+e.addClass / removeClass / toggler
+
+
+6.Quiz
+a.Array - Array 1(Questions)
+          Array 2(Answers)
+b. Event listeners
+
+
+7.Mouseover effect
+a.click
+b. dbclck
+c. Mouse  Move
+d. mouse over
+
+
+8.Weather app
+a. input(form control)
+b. events(input,change)
+c.button(click)
+d.online weather api(url)
+e.function
+f.Fetch api(web api)
+
+
+
+9. Browser Code editor
+
+
+Introduction To Backend
+
+Command line techniques
+command prompt/terminal/command line interface
+commands we shall use frequently:
+1. cd- change directory: Syntax -cd{name of the folder}
+                          USAGE: cd Backend
+2.mkdir - make directory
+         USAGE:mkdir test
+3. rmdir - remove directory
+           USAGE: rmdir test   
+4. cd.. - to move up in the folder directory three
+5. ls : to list directory                                           

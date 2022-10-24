@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--we used getElementById here-->
+    <div  id="emptyDiv">
+    </div>
+     
+    <!--we can use either
+       1. getElementByClassName
+        2. getElementsByTagName-->
+    <div class="elements"></div>
+    <div class="elements"></div>
+    <div class="elements"></div>
+
+    <div style="color:brown;border:solid 2px black;height: 100px;" class="container"></div>
+
+    <!--we are going to use the css query selector:
+     1. querySelector('')
+     2. querySelectorAll('')-->
+
+     <!--querySelector('#output')to grab an id-->
+     <div id="output1"></div>
+     <!--querySelector('output2')to grab a class-->
+     <div class="output2"></div>
+     <!--querySelector('div') returns the first div element itv finds-->
+     <div></div>
+     <!--querySelectorAll('div') returns all div element in an HTML Collection-->
+
+    <script>
+        // The Document Object
+        // Methods on the Document Object
+        // 1. getElementById
+    var emptyDiv = document.getElementById('emptyDiv')
+        console.log(emptyDiv)
+        // Injecting Text / Content wit6h Javascript
+        emptyDiv.innerHTML = 'Hello Debbie'
+        // 2. getElementByClassName("")
+        var elements = document.getElementsByClassName('elements')
+        console.log(elements)
+        // We need to loop through a HTML Collection to be able to manipulate each elements in it.
+        for(var i = 0; i < elements.length; i++){
+            elements[i].innerHTML = 'Good Afternoon'
+        }
+       // Example usage of querySelector
+       var output1 = document.querySelector('#output1')
+       console.log(output1)
+       output1.innerHTML = "output1"
+
+       var container = document.getElementsByClassName('container')
+       console.log(container)
+       for(var i = 0; i < container.length; i++)
+       container[i].innerHTML = "INTRODUCTION TO DOM: Learnt about query selector method and the getElementsById, getElementsByClassName method. "
+    
+    </script>
+</body>
+</html>

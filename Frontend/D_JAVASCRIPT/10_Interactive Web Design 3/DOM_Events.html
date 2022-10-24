@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <h1>Responding to user events on our webpage</h1>
+    <button onclick="alert('You Clicked Me!' )">Click me</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae eos cupiditate aliquam repellat odit vero doloremque voluptas molestias quia!</p>
+    <form>
+        <div>
+        <label>First Name:</label>
+        <input type="text" id="textInput"></div><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        var h1 = document.querySelector('h1')
+        console.log(h1)
+        h1.onClick = function(){
+            console.log('I was clicked!')
+        }
+        var p = document.querySelector('p')
+        console.log(p)
+        //  The add event listener takes in two parameters
+        // 1. The first parameter is the name of the event you want to listen to
+        // 2. The second parameter is the call back function
+        p.addEventListener('click', function(event){
+            console.log(event)
+        })
+
+        // The Keyboard events and Event Object
+        document.addEventListener('keydown', function(event){
+            console.log(event.key)
+        })
+
+        // The Form events and preventDefault
+        var form = document.querySelector('form')
+        console.log(form)
+        form.addEventListener('submit', function(event){
+            event.preventDefault()
+           console.log(event)
+        })
+
+        // input and change events
+        const textInput = document.querySelector('#textInput')
+        console.log(textInput)
+       // textInput.addEventListener('input', function(e){
+           // console.log(e.target.value)
+       // })
+        textInput.addEventListener('change', function(e){
+            console.log(e.target.value)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /* Border Properties */
+        .border {
+            color: maroon;
+            font-weight:bold;
+            border-top-width: 10px;
+            border-style: groove;
+            border-top-color:blueviolet;
+        }
+       .border-shorthand {
+        color: rgb(6, 255, 35);
+        font-weight: bold;
+        border: 10px solid pink;
+       }
+       /* Padding Properties */
+       .padding{
+          padding-top: 10px;
+          padding-left: 20px;
+          padding-bottom: 10px;
+
+       }
+       .padding-shorthand{
+        padding: 10px 0 10px 20px;
+       }
+       /* Padding and Element width*/
+       .padding-width{
+        width: 200px;
+        padding: 10px 10px 10px30px;
+        box-sizing: border-box;
+       }
+    /* Margin Properties*/
+    .margin{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    /* All the values of the properties are the same: */
+    .margin-shorthand{
+        margin: 10px; /* When all sides have same values */
+        /* margin: top/bottom left/right */
+        margin: 40px 60px;
+    }
+    /* Centering Content*/
+    .center{
+        border: 5px solid black;
+        width:30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>The CSS Box Model</h1>
+
+    <ol>
+        <li>Border</li>
+        <li>Padding</li>
+    </ol>
+
+    <h2>The Border Properties:</h2>
+    <p>Let us use a div element for our example</p>
+    <div class="border">Border Properties here!</div>
+    <div class="border-shorthand">Border Shorthand Method here!</div>
+
+    <h2>The Padding Properties:</h2>
+    <p>Let us use a div element for our example</p>
+    <div class=" border Padding">Padding Properties here!</div>
+    <div class=" border-shorthand Padding-shorthand">Padding Shorthand Method here!</div>
+
+    <h2>Padding and Element Width:</h2>
+    <p>Let us use a div element for our example</p>
+    <div class=" border padding padding-width ">Padding and width Properties here!</div>
+    
+    <h2>The Margin Properties:</h2>
+    <p>Let us use a div element for our example</p>
+    <div class=" border padding margin">Margin Properties here!</div>
+    <div class=" border-shorthand padding-shorthand margin-shorthand">Margin Shorthand Method here!</div>
+
+    <h2>Centering Content</h2>
+    <p>The div below will be centered!</p>
+    <div class="center">A div in the middle  of the page</div>
+</body>
+</html>

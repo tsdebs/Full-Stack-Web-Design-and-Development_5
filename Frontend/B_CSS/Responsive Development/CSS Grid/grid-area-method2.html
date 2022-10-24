@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-areas:
+         'Header Header Header'
+         'Menu Main Right'
+         'Footer Footer Footer';
+        }
+        header{
+            grid-area: Header;
+        }
+        menu{
+            grid-area: Menu;
+        }
+        main{
+            grid-area: Main;
+        }
+        .right{
+            grid-area: Right;
+        }
+        footer{
+            grid-area: Footer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout Method 2</h1>
+    <div class="container">
+        <header>Header</header>
+        <menu>Menu</menu>
+        <main>Main</main>
+        <div class="right">Right</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

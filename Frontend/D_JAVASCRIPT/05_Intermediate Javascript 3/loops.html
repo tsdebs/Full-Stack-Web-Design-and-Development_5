@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops</h1>
+    <script>
+        var count = 0
+        while(count < 11){
+            console.log(count)
+            count = count + 1 // is the sma as count++
+            // count++ is known as increment
+            // count-- is known as decrement
+        }
+
+        // For Loop
+        console.log('\n The For loop');
+        
+        for (var i = 0; i <= 20; i++){
+             console.log(i)
+        }
+
+        // For in
+        // it is used to iterate through an object
+        var car = {
+            make: 'camry',
+            model: 2020,
+            color: 'white'
+        }
+
+        // iterating through car
+        for (var carProperties in car){
+            console.log(carProperties + '=' + car[carProperties] )
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Making</title>
+</head>
+<body>
+    <h1>Making Decisions in Javascript</h1>
+    <ul>
+        <li>if else statements</li>
+        <li>if else if statements</li>
+    </ul>
+    <script>
+        // Decision Making in Javascript is also kmown as CONTROL FLOW!
+        // We are always going to use comparism and logical operators to make decisions
+        // Comparism Operators: != , !== , == and ===, (denotes Equality and Strict Equality with its negations ). We also have greater than (>), and less than(<) etc.
+        // Logical Operators are your And (&&) , Or (||) and Not (!)
+
+        // Example Usage 1:
+        if( 2 == 2){
+            console.log('Yes, it is true')
+        } else{
+            console.log('No, it is not true')
+        }
+
+        // Example Usage 2:
+        if(2 === 2){
+            console.log('Yes, the values are equal')
+        } else{
+            console.log('No, the data types are not the same!')
+        }
+        // Example Usage 3:
+        if( 2 != 2){
+            console.log('No, the values are not equal')
+        } else{
+            console.log('Yes, the values are equal')
+        }
+        // Example Usage 4:
+        if( 2 !== 2){
+            console.log('No, the values are not equal')
+        } else{
+            console.log('Yes, the values are equal')
+        }
+
+        // Logical Operations
+        // Example Usage 1:
+        if( (2 == 2) && ('Hello' === 'Hello')){
+            console.log('It is true!')
+        } else{
+            console.log('It is false')
+        }
+        // Example Usage 2:
+        if( (2 === '2') || ('Hello' === 'Hello world')){
+            console.log('It is true!')
+        } else{
+            console.log('It is false')
+        }
+        // Example Usage 3:
+        var a = true
+        if(!a){
+            console.log('The condition is true')
+        }
+        else{
+            console.log('Negation of true is false')
+        }
+
+    </script>
+</body>
+</html>

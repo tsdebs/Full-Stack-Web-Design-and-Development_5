@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The position property</title>
+    <style>
+        .rel{
+            color: red;
+            font-weight: bold;
+            position: relative;
+            /* top left right bottom to control it's position */
+            top: 100px;
+            left: 40px;
+        }
+        .abs{
+            color: blueviolet;
+             position: absolute;
+             font-weight: bold;
+             top: 0;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            background: lightskyblue;
+
+            position: relative;
+            z-index: 1;
+        }
+        .abs-rel{
+            color: fuchsia;
+            position: absolute;
+
+            font-weight: bold;
+            top: 0;
+            bottom: 0px;
+        }
+        .fix{
+            color: brown;
+            font-weight: bold;
+
+            position: fixed;
+            top: 200px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Position Property</h1>
+    <ol>
+        <li>Static for normal flow (Default)</li>
+        <li>Relative position</li>
+        <li>Absolute Position</li>
+        <li>Fixed Position</li>
+    </ol>
+
+    <h2>Example Usage</h2>
+    <h4>Relative Positioning</h4>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati quis, doloremque odit labore laboriosam qui et rerum aperiam totam temporibus voluptatem. Tempore quos corrupti velit iste exercitationem laboriosam quis.</p>
+
+    <p class="rel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta, earum dignissimos modi quia ipsum non sunt deleniti nesciunt voluptas at tenetur, laborum minima aperiam. Adipisci labore commodi facere quidem?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos, modi nihil exercitationem deleniti reiciendis? Eaque nihil itaque ipsum odio necessitatibus? Accusamus voluptate sed odit vitae! Cupiditate sunt sit consequuntur?</p>
+
+    <h2>Example Usage</h2>
+    <h4>Absolute Positioning</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati quis, doloremque odit labore laboriosam qui et rerum aperiam totam temporibus voluptatem. Tempore quos corrupti velit iste exercitationem laboriosam quis.</p>
+
+    <p class="abs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta, earum dignissimos modi quia ipsum non sunt deleniti nesciunt voluptas at tenetur, laborum minima aperiam. Adipisci labore commodi facere quidem?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos, modi nihil exercitationem deleniti reiciendis? Eaque nihil itaque ipsum odio necessitatibus? Accusamus voluptate sed odit vitae! Cupiditate sunt sit consequuntur?</p>
+
+    <h2>Example Usage 2</h2>
+    <h4>Absolute Positioning a realtive Ancestor</h4>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, animi!</p>
+
+        <p class="abs-rel">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, blanditiis.</p></div>
+
+        <h2>Example Usage</h2>
+        <h4>Fixed Positioning</h4>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati quis, doloremque odit labore laboriosam qui et rerum aperiam totam temporibus voluptatem. Tempore quos corrupti velit iste exercitationem laboriosam quis.</p>
+
+    <p class="fix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta, earum dignissimos modi quia ipsum non sunt deleniti nesciunt voluptas at tenetur, laborum minima aperiam. Adipisci labore commodi facere quidem?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos, modi nihil exercitationem deleniti reiciendis? Eaque nihil itaque ipsum odio necessitatibus? Accusamus voluptate sed odit vitae! Cupiditate sunt sit consequuntur?</p>
+</body>
+</html>

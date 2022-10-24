@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Array Method</title>
+</head>
+<body>
+    <h1>Array Method Used For Looping</h1>
+    <ol>
+        <li>The forEach Method</li>
+        <li>The Map Method</li>
+        <li>The Filter Method</li>
+        <li>The Reduce Method</li>
+    </ol>
+
+    <script>
+        // forEach
+        var carMakes = ['Benz', 'Royce', 'Range Rover', 'Chevrolet', 'Camry','Nissan']
+        carMakes.forEach((car)=>{
+            console.log(car)
+        })
+        console.log('\nThe Map Method')
+        //map
+        // The Map method returns a new array after looping through the former
+        var newArray = carMakes.map((carMake)=>{
+            return carMake
+        })
+        console.log(newArray)
+
+        console.log('\nThe filter method')
+        // typeof
+        var num = 24
+        var alpha = "abc"
+        console.log(typeof num)
+        console.log(typeof alpha)
+
+        // filter method
+        // The filter method returns a new array containinig values that pass a conditional check
+        var alphaNumeric = ['Benz', 2000000, 'Royce', 1000000, 'Chevrolet', 5,'Camry', 9, 'Nissan']
+        var onlyNumbers = alphaNumeric.filter((fix)=>{
+            if(typeof fix == 'number'){
+                return fix
+            }
+        })
+         console.log(onlyNumbers)
+         console.log('\nThe reduce method')
+         // reduce method takes in two parameters which are
+         // 1. Callback function
+         // 2. Initial value
+         var arr = [1,2,3,4,5,6,7,8,9]
+         var initialValue = 120
+         var sumOfElements = arr.reduce((prev,current)=>{
+              return prev + current
+         }, initialValue)
+         console.log(sumOfElements)
+    </script>
+</body>
+</html>
