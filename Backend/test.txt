@@ -1,0 +1,15 @@
+Introduction To Backend
+
+Command line techniques
+command prompt/terminal/command line interface
+commands we shall use frequently:
+1. cd- change directory: Syntax -cd{name of the folder}
+                          USAGE: cd Backend
+2.mkdir - make directory
+         USAGE:mkdir test
+3. rmdir - remove directory
+           USAGE: rmdir test   
+4. cd.. - to move up in the folder directory three
+5. ls : to list directory  
+
+The package.json file: this file monitors every file in our project directory.To create this file, type: npm init
