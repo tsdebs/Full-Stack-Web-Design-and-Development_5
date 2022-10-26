@@ -1,0 +1,97 @@
+Introduction To Backend
+
+Command line techniques
+command prompt/terminal/command line interface
+commands we shall use frequently:
+1. cd- change directory: Syntax -cd{name of the folder}
+                          USAGE: cd Backend
+2.mkdir - make directory
+         USAGE:mkdir test
+3. rmdir - remove directory
+           USAGE: rmdir test   
+4. cd.. - to move up in the folder directory three
+5. ls : to list directory  
+
+The package.json file: this file monitors every file in our project directory.To create this file, type: npm init
+
+A module is a file that is exporting some codes.
+we use require to get the exact module we want.
+
+Reading and writig to files:
+To read and write to files in nodejs,we use one of nodejs core modules known as FS
+To read files,we use a method called readFileSync() eg: fs.readFileSync()This method takes in two argument
+1. The full part of the we want to read.
+2. The character encoding because we are dealing with binary data eg: "utf-8"
+
+readFileSync is a synchronous operation.
+
+To write files, we use: writeFileSync() method
+this takes two parameters:
+1. the name of the file we want to write to
+2.the data
+
+Module.export
+module.export is a Global object
+NB:
+1. In node, Global is the global object
+2. In DOM, window is the global object
+
+
+classwork
+1. use the fs module to 
+2. read and write files
+3. create two other files
+4. in one, create a function that performs an operation of adding two numbers together
+5. now export this function 
+6. invoke this function in the second file as well as passing in the necessary arguments(two numbers) 
+
+
+Express JS and Templating Engines
+what is express json
+express is a minimal and flexibke node.js web application framework that provides a robust set of festures for web and mobile applications.it is used to create servers.
+it is a layer built on top of the node.js that helps manage servers and routes.
+to create a server using express,we have to call/require the express module.
+
+NB: we need to store all the functionalities returned from the express module in a variable conventionally called app.
+
+Handling Requests and Responses
+clients and servers: clients make request to the servers and servers send responses back to the client.
+nodejs handles this back and forth process
+we create a server which is just a file containing codes that listens for requests comimg from the frontend.
+
+we have a method that listens for the requests coming from the browser called LISTEN
+
+now this method takes in two arguments:
+1. port - to listen on
+2. callback function - that runs  when the node application is connected to the browser
+
+Understanding and Working with routes
+A route is a section of express code that associates a HTTP verb(GET,POST,PUT,DELETE,etc) a url path/pattern and  a function that is called to handle that pattern.
+
+path:
+/ is always taken as the homepage or landing page of our website.
+
+Function in the route
+The callback function in the route takes in two parameters
+1. request
+2.response
+
+processing POST requests with body-parser module
+POST is used to send data to a server(from the frontend )to create/update a resource(database).
+
+body-parser module is a module that comes along whenever we install the express(package from express)
+
+what is body-parser?
+express body-parser is an npm module used to process data sent in an HTTP request body.
+NB:
+1. it provides four middleware for parsing 
+a. JSON
+B. text
+c. URL-encoded
+d. raw data sets over an HTTP request body
+
+Middleware is a function
+
+express middleware is a function that has access to the request(req) and response(res), and the next function in the application's request response cycle. The next function is a function in the express router which when invoked executes he middleware succeeding the current middleware
+
+to install globally, we use npm install-g nodemon
