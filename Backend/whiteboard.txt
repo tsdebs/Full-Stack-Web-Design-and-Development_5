@@ -95,3 +95,40 @@ Middleware is a function
 express middleware is a function that has access to the request(req) and response(res), and the next function in the application's request response cycle. The next function is a function in the express router which when invoked executes he middleware succeeding the current middleware
 
 to install globally, we use npm install-g nodemon
+
+
+
+
+JSON : javascript object notation
+it is one of the ways in which data can be stored in a file using json format
+
+
+Te fetch api:
+fetch is based on async and await
+
+
+Nosql and sql database
+ NoSql:are non tabular databases
+ types of nosql databases:
+ 1. document database
+ 2.key value databases
+ 3.wide-column stores
+4. graph database
+
+
+Nosql is also used for querying a database
+Crud operation:
+C create
+R read
+U update
+D delete
+
+MongoDB Commands:
+1. show dbs - this means show database
+2. use [database name]- it is used to switch betwen databases.
+3. show collections- to view the collections in a database
+4. help - to get help
+5.  .find() - to retrieve documents in a collections
+
+
+

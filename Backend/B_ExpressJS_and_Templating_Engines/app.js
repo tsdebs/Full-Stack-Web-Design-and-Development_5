@@ -7,7 +7,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/about', (req,res)=>{
-    res.send('<p>Thia is the about page!</p>')
+    res.send('<p>This is the about page!</p>')
 })
 
 app.listen(3000, ()=>{
